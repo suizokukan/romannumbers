@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-################################################################################
-#    Romannumbers Copyright (C) 2012 Suizokukan
+###############################################################################
+#    Romannumbers Copyright (C) 2012 suizokukan
 #    Contact: suizokukan _A.T._ orange dot fr
 #
 #    This file is part of Romannumbers.
@@ -17,7 +17,7 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with Romannumbers.  If not, see <http://www.gnu.org/licenses/>.
-################################################################################
+###############################################################################
 """
         Romannumbers by suizokukan (suizokukan AT orange DOT fr)
         ________________________________________________________________________
@@ -25,11 +25,12 @@
         Conversion between Roman numbers and Arabic numbers.
         ________________________________________________________________________
 
-        Code largely inspired by Dive Into Python (http://www.diveintopython3.net/)
+        Code largely inspired by Dive Into Python, see
+        http://www.diveintopython3.net/ .
 """
-VERSION = "0.0.0"
-
 import re
+
+VERSION = "0.0.1"
 
 ROMANNUMERALMAP = (('M', 1000),
                    ('CM', 900),
@@ -45,9 +46,10 @@ ROMANNUMERALMAP = (('M', 1000),
                    ('IV', 4),
                    ('I', 1))
 
-ROMANNUMERALPATTERN = re.compile("^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$")
+ROMANNUMERALPATTERN = re.compile("^M{0,4}(CM|CD|D?C{0,3})"
+                                 "(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$")
 
-#///////////////////////////////////////////////////////////////////////////////
+
 def from_roman(src):
     """
         from_roman() function
@@ -77,7 +79,7 @@ def from_roman(src):
             index += len(numeral)
     return (True, result)
 
-#///////////////////////////////////////////////////////////////////////////////
+
 def to_roman(src):
     """
         to_roman() function
