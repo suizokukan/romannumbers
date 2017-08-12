@@ -22,8 +22,7 @@
         Romannumbers by suizokukan (suizokukan AT orange DOT fr)
         ________________________________________________________________________
 
-        tests.py
-        ________________________________________________________________________
+        tests/tests.py
 
         to launch the tests :
 
@@ -32,6 +31,10 @@
                 or
 
                 $ python -m unittest tests/tests.py
+        ________________________________________________________________________
+
+        class
+          ▪ Tests
 """
 import unittest
 
@@ -41,15 +44,30 @@ from romannumbers import romannumbers
 class Tests(unittest.TestCase):
     """
         Tests class
+        ________________________________________________________________________
 
         use this class to test the romannumbers/romannumbers.py file
+        ________________________________________________________________________
+
+        no class attribute
+
+        no instance attribute
+
+        methods :
+
+        ● test__from_roman(self)
+        ● test__to_roman(self)
     """
 
     def test__from_roman(self):
         """
-                Tests.test__from_roman()
+            Tests.test__from_roman()
+            ____________________________________________________________________
 
-                Test of the romannumbers/romannumbers.py::from_roman() function
+            Test of the romannumbers/romannumbers.py::from_roman() function
+            ____________________________________________________________________
+
+            no PARAMETER, no RETURNED VALUE
         """
         self.assertEqual(romannumbers.from_roman("XIX"),
                          (True, 19))
@@ -63,9 +81,13 @@ class Tests(unittest.TestCase):
 
     def test__to_roman(self):
         """
-                Tests.test__to_roman()
+            Tests.test__to_roman()
+            ____________________________________________________________________
 
-                Test of the romannumbers/romannumbers.py::to_roman() function
+            Test of the romannumbers/romannumbers.py::to_roman() function
+            ____________________________________________________________________
+
+            no PARAMETER, no RETURNED VALUE
         """
         self.assertEqual(romannumbers.to_roman(1),
                          (True, "I"))
