@@ -16,6 +16,8 @@ Micro-library to convert Roman numbers from|to Arabic numbers.
 ... will print "CIX"
 
 # tests
+Use check_the_code.sh to check code's quality and launch unittests.
+    
 ` $ nosetests
 or
 ` $ python -m unittest tests/tests.py

@@ -23,6 +23,8 @@
         ________________________________________________________________________
 
         Conversion between Roman numbers and Arabic numbers.
+
+        Use check_the_code.sh to check code's quality and launch unittests.
         ________________________________________________________________________
 
         Code largely inspired by Dive Into Python, see
