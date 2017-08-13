@@ -1,4 +1,4 @@
-# Roman numbers    
+# Roman numbers, v. 0.0.1
 
 Micro-library to convert Roman numbers from|to Arabic numbers.
   
